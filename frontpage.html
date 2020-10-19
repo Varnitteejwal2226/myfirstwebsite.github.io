@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>front page</title>
+	<style type="text/css">
+		body{
+			margin: 0px;
+			padding:0px;
+		}
+		table,th,tr{
+			border:2px solid blue;
+			border-collapse: collapse;
+		}
+		th{
+			width: 220px;
+			height: 43px
+		}
+		td{
+			width: 195px;
+			height: 40.8px;
+		}
+		h1{
+			font-size: 30px;
+			color: black;
+			font-weight: bolder;
+		}
+	
+		#left{
+		
+			width: 200px;
+			height: 400px;
+			background-color: #f2f3f5;
+			float: left;
+		}
+		#center{float: left;
+			width: 914px;
+			height: 400px;
+			position: relative;
+			background-image: url(mainbuild.jpg);
+			background-repeat: no-repeat;
+		background-size: 914px 400px; 
+		}
+		#righttop{
+			text-align: center;
+			float: left;
+			float:top;
+			border:1.5px solid blue;
+			background-color: #f2f3f5;
+			width: 230px;
+			height: 200px;
+
+		
+		}
+		#rightbottom{
+			text-align: center;
+	
+		    float: left;
+			width: 230px;
+			height: 200px;
+			border:1.5px solid blue;
+			background-color: #f2f3f5;
+		}
+		#topbar{
+			background-color: #00ffff;
+			width: 100%;
+			height: 50px;
+			margin: 0 auto;
+		}
+		#bottombar{
+			background-color:#00ffff;
+			border: 2px solid blue;
+			margin: 0 auto;
+			
+			height: 180px;
+			margin-top: 400px;
+
+		}
+		#center{
+			position: relative;
+			text-align: center;
+			color: white;
+			margin: 0 auto;
+			animation: animate 50s ease-in-out infinite;
+		}
+		@keyframes animate{
+			0%,100%{
+				background-image: url(1.jpg);
+			}
+			10%{
+				background-image: url(2.jpg);
+			}
+			20%{
+				background-image: url(3.jpg);
+			}
+			30%{
+				background-image: url(4.jpg);
+			}
+			40%{
+				background-image: url(5.jpg);
+			}
+			50%{
+				background-image: url(6.jpg);
+			}
+			60%{
+				background-image: url(7.jpg);
+			}
+			70%{
+				background-image: url(8.jpg);
+			}
+			80%{
+				background-image: url(9.jpg);
+			}
+			90%{
+				background-image: url(10.jpg);
+			}
+			
+			
+		}
+		img{
+			
+
+			width: 60px;
+			height: 60px;
+		}
+		marquee{
+			font-size: 15px;
+			font-weight: bolder;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="topbar">
+		<table>
+			<tr>
+				<th><a href="Departments.html"> <button style="width: 220px;height: 45px;">Departments</button></a></th>
+				<th><a href="recuirments.html"><button style="width: 220px;height: 45px;">Recuirments</button></a></th>
+				<th><a href="S_registration.html"> <button style="width: 220px;height: 45px;">Student Registration</button></a></th>
+				<th> <a href="gradecal.html"><button style="width: 220px;height: 45px;">grade calculator</button></a></th>
+				<th><a href="Campuslife.html"> <button style="width: 220px;height: 45px;">Campus life</button></a></th>
+				 <th><a href="localhost/clgwebsite/signup.php"> <button style="width: 220px;height: 45px;">SignUp</button></a></th>
+			</tr>
+		</table>
+	</div>
+<div id="middle_part">
+	<div id="left"> 
+		<table>
+			<tr><td style="background-color: #3399ff"> <marquee behavior="alternate">IMPORTANTS LINKS</marquee></td></tr>
+			<tr><td> NPTEL</td></tr>
+			<tr><td>Unnat bharat abhiyan</td></tr>
+			<tr><td>Academkic calendar</td></tr>
+			<tr><td> PHD admissions</td></tr>
+			<tr><td> Establisment services</td></tr>
+			<tr><td> Wellness center</td></tr>
+			<tr><td> JEE(advanced)-2020</td></tr>
+			<tr><td>Women help desk</td></tr>
+
+		</table>
+	</div>
+	<div id="center">
+		
+		<div>
+			<h1> WELCOME TO IIT ROORKEE</h1>
+		</div>
+		
+
+	</div>
+	<div>
+		<div id="righttop">
+			<h1>Student login</h1>
+		 <img src="signlogo.png">
+		 <input type="text" name="" placeholder="username">
+		 <input type="password" name="" placeholder="password">
+		 <button> signin</button>
+		</div>
+		<div id="rightbottom">
+			<h1>Teacher login</h1>
+			<img src="signlogo.png">
+			<input type="text" name="" placeholder="username">
+		 <input type="password" name="" placeholder="password">
+		 <button> signin</button>
+		</div>
+	</div>
+</div>
+<div id="bottombar"> 
+	<marquee behavior="alternate" direction="right"> <h3>IIT ROORKEE placed at 6th rank in Enginnering college </h3></marquee>
+	<marquee behavior="alternate" direction="left"><h3>Heighest international package is 1.53 crore p.a</h3> </marquee>
+	<marquee behavior="alternate" direction="right"> <h3>First Engineering college in Asia</h3></marquee>
+</div>
+<script type="text/javascript">
+	$('document').ready(function(){
+		$('center').css('background-image','url("mainb.jpg")');
+	});
+</script>
+</body>
+</html>
